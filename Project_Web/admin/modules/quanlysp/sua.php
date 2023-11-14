@@ -34,11 +34,11 @@ $query_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
                 </tr>
                 <tr>
                     <td>Tóm tắt</td>
-                    <td><textarea rows="5" name="tomtat"><?php echo $row['tomtat'] ?></textarea></td>
+                    <td><textarea class="no-resize" rows="5" name="tomtat"><?php echo $row['tomtat'] ?></textarea></td>
                 </tr>
                 <tr>
                     <td>Nội dung</td>
-                    <td><textarea rows="5" name="noidung"><?php echo $row['noidung'] ?></textarea></td>
+                    <td><textarea class="no-resize" rows="5" name="noidung"><?php echo $row['noidung'] ?></textarea></td>
                 </tr>
                 <tr>
                     <td>Tình Trạng</td>

@@ -19,10 +19,14 @@ html {
     font-size: 18px;
 }
 
-input {
+input, textarea {
     padding: 5px;
     width: 100%;
 }
+
+.no-resize {
+    resize: none;
+  }
 
 /* font-size */
 
