@@ -1,0 +1,143 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+h3{
+    text-align: center;
+}   
+
+/* all */
+
+html {
+    font-size: 18px;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+}
+
+/* font-size */
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+/* .wrapper{
+    border: 1px solid #000000;
+    height: auto;
+    width: 97%;
+    margin: 0 auto;
+} */
+
+table {
+        width: 50%;
+        padding: 5px;
+        margin: 20px auto;
+        border-collapse: collapse;
+
+}
+
+/* flex */
+.flex-container {
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+.flex-item-main {
+    flex: 6;
+    margin: 0 30px;
+}
+
+/* menu_list */
+
+.menu_container {
+}
+
+ul.menu_list {
+    flex: 4;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color:#18325e;
+}
+
+ul.menu_list li {
+    padding: 10px;
+    color: #fff;
+    list-style: none;
+    font-size: 18px;
+}
+
+ul.menu_list li a {
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul.menu_list li:hover {
+    cursor: pointer;
+    background-color: rgba(174, 172, 172, 0.4);
+    color: #fff;
+}
+
+
+/* danhmuc */
+.danhmuc-add {
+
+}
+
+.danhmuc-add tr,th,td {
+    padding: 5px;
+}
+
+.danhmuc-add td input {
+    padding: 5px;
+}
+
+.danhmuc-lietke {
+
+}
+
+.danhmuc-lietke td {
+    text-align: center;
+}
+
+/* main */
+
+.main-container {
+
+}
+
+.main-item {
+    background-color: #e6e6e6;
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+}
