@@ -1,5 +1,5 @@
 <p>Thêm danh mục sản phẩm</p>
-<div class="main-item">
+<div class="main-item bg-main-item">
     <table class="danhmuc-add">
         <form method="post" action="modules/danhmucsp/xuly.php">
             <tr>

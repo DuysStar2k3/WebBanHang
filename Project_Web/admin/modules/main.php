@@ -1,6 +1,6 @@
 <div class="clear"></div>
 <div class="main-container">
-    <p class="font-size-22" >MAIN ADMIN</p>
+    <strong><p class="font-size-22 " >MAIN ADMIN</p></strong>
     <?php
     if (isset($_GET['action']) && $_GET['query']) {
         $tmp = $_GET['action'];
