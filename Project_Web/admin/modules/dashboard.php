@@ -8,8 +8,8 @@ $sql_dem_sanpham = "SELECT COUNT(*) AS dem FROM tbl_sanpham";
 $query_dem_sanpham = $mysqli->query($sql_dem_sanpham);
 ?>
 
-<!-- 
-//Hiển thị số lượng danh mục -->
+
+//Hiển thị số lượng danh mục
 <div class="flex-container flex-wrap bg-dash">
     <?php
     if ($query_dem_danhmuc) {
@@ -31,7 +31,7 @@ $query_dem_sanpham = $mysqli->query($sql_dem_sanpham);
     ?>
 
 
-    <!-- //Hiển thị số lượng sản phẩm -->
+    //Hiển thị số lượng sản phẩm
     <?php
     if ($query_dem_sanpham) {
         $result = $query_dem_sanpham->fetch_assoc();
@@ -51,7 +51,7 @@ $query_dem_sanpham = $mysqli->query($sql_dem_sanpham);
     ?>
 
 
-    <!-- //Hiển thị số lượng tin tức -->
+    //Hiển thị số lượng tin tức
     <div class="info-box fex-1">
         <span class="info-box-icon bg-yellow"><i class=""></i></span>
 
@@ -61,8 +61,7 @@ $query_dem_sanpham = $mysqli->query($sql_dem_sanpham);
         </div>
         <!-- /.info-box-content -->
     </div>
-
-    <!-- //hiển thị số lương bài viết -->
+    //hiển thị số lương bài viết
 
 
     <div class="info-box fex-1">

@@ -22,7 +22,7 @@
         </div>
 
         <div class="flex-container">
-            <div class="bg-main-menu">
+            <div class="">
                 <?php
                 include("modules/menu.php");
                 ?>

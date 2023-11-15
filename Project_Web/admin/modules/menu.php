@@ -11,13 +11,13 @@
             </a>
         </li>
         <li class="">
-            <a href="index.php?action=quanlydmbviet&query=them">
-                Quản lý danh mục bài viết
+            <a href="index.php?action=quanlybviet&query=them">
+                Quản lý bài viết
             </a>
         </li>
         <li class="">
-            <a href="index.php?action=quanlybviet&query=them">
-                Quản lý bài viết
+            <a href="index.php?action=quanlydmbviet&query=them">
+                Quản lý danh mục bài viết
             </a>
         </li>
     </ul>

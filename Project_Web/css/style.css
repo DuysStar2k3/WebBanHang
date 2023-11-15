@@ -8,14 +8,7 @@ body{
     width: 97%;
     margin: 0 auto;
 }
-.header{
-    background-image: url("../image/th\ \(1\).jpg");
-    border: 1px solid #000;
-    height: 130px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
+
 .menu{
     border: 1px solid #000;
     height: 50px;
@@ -102,6 +95,7 @@ ul.puduct_list li{
 }
 ul.puduct_list li img{
     width: 100%;
+    height: 200px;
 }
 ul.puduct_list li a {
     text-decoration: none;
@@ -132,3 +126,256 @@ p.price_puduct {
     font-weight: bold;
 }
 
+p{
+    margin: 7px;
+    color: black;
+}
+
+/* css sản phẩm */
+/* Reset CSS */
+
+
+
+
+
+
+.red-text {
+    color: red;
+}
+
+#red-heart {
+    color: black;
+}
+
+
+#container {
+    background-color: #f2f2f2;
+}
+
+
+.item {
+    display: flex;
+    background-color: #ffffff;
+    margin: 10px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+
+
+.img-toaster {
+    margin: 15px;
+    width: 45%;
+    border: solid 2px #f2f2f2;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+
+
+.info-item>.name-item>p {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+
+
+.delevery-item {
+    display: flex;
+}
+
+.ship-item{
+    text-wrap: nowrap;
+    margin-left: 8px;
+}
+
+.cost-ship {
+    display: flex;
+}
+
+.cost-ship>i {
+    padding: 0 10px;
+    color: red;
+    font-size: 18px;
+}
+
+.location-ship {
+    display: flex;
+    margin-right: 32px;
+}
+
+.location-ship>i {
+    padding: 0 10px;
+    color: #1e5a46;
+    font-size: 18px;
+}
+
+.color-item {
+    padding-top: 40px;
+}
+
+.color-item>.text {
+    display: flex;
+}
+
+.color-item>.text>p {
+    padding-left: 12px;
+}
+
+.color-item>img {
+    margin-top: 10px;
+    width: 70px;
+    border: solid 3px hsl(0, 100%, 50%);
+    cursor: pointer;
+}
+
+.color-item>img:hover {
+    opacity: 0.5;
+}
+
+.choose-quantity-like {
+    display: flex;
+    margin-top: 20px;
+}
+
+.choose-quantity-like > strong {
+    margin-top: 6px;
+}
+
+.quantity-item {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #f2f2f2;
+}
+
+.quantity-item>button {
+    padding: 4px 12px;
+    font-size: 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 0px;
+
+}
+
+.quantity-item>button:hover {
+    background-color: #f2f2f2;
+}
+
+.quantity-item>.decrease-item {
+    border-right: solid 2px #f2f2f2;
+}
+
+.quantity-item>.increase-item {
+    border-left: solid 2px #f2f2f2;
+}
+
+.quantity-item>.value-item {
+    margin: 0 10px;
+}
+
+.like-item {
+    margin-left: 100px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #f2f2f2;
+}
+
+.like-item > strong {
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: solid 2px #f2f2f2;
+}
+
+
+
+.like-item > i:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.buy-item {
+    margin-top: 20px;
+    display: flex;
+}
+
+.buy-item>button {
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.buy-item>.buy-now {
+    margin-right: 15px;
+    background-color: red;
+    border: solid 2px red;
+    color: #ffffff;
+}
+
+.buy-item>.buy-now:hover {
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.buy-item>.add-to-bag {
+    background-color: #ffffff;
+    border: solid 2px hsl(0, 100%, 50%);
+    color: hsl(0, 100%, 50%);
+}
+
+.buy-item>.add-to-bag:hover {
+    background-color: rgba(0, 0, 0, 0.329);
+    color: #ffffff;
+}
+
+
+.buy-item>button>i {
+    margin-right: 5px;
+}
+
+
+
+.general-information {
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.general-information>.ge-info>strong {
+    display: flex;
+    margin: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.table-info>table {
+    border-collapse: collapse;
+    width: 98%;
+    margin: 10px;
+}
+
+.table-info>table>tr,
+td {
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+
+}   
+
+.table-info > table > .tr-1 {
+    width: 30%;
+}
+
+.table-info>table>tr,
+td:first-child {
+    border-left: none;
+    width: 30%;
+}
+
+.table-info>table>tr,
+td:last-child {
+    border-right: none;
+
+}
