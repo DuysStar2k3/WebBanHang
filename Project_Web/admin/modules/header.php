@@ -3,8 +3,8 @@
         DI ĐỘNG THÔNG MINH
     </div>
 
-    <div class="">
-        Xin chào, <span class="admin-info">Admin</span>
-        <div><a href="">Đăng xuất</a></div>
+    <div class="info-logout pd-5">
+        <div>Xin chào, Admin!</div>
+        <a href="#">Đăng xuất</a>
     </div>
 </div>
