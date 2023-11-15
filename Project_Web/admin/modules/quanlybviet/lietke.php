@@ -29,8 +29,8 @@
                 </td>
                 <td><img style="width: 200px;" src="modules/quanlybv/uploads/<?php echo $row['hinhanh'] ?>" alt=""></td>
 
-                <td><a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sp'] ?>">Xóa</a>
-                    |<a href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sp'] ?>">Sửa</a></td>
+                <td><a href="modules/quanlysp/xuly.php?idbaiviet=<?php echo $row['id_sp'] ?>">Xóa</a>
+                    |<a href="?action=quanlysp&query=sua&idbaiviet=<?php echo $row['id_sp'] ?>">Sửa</a></td>
             </tr>
             <?php
         }
