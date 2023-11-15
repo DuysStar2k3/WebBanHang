@@ -87,7 +87,7 @@ ul.puduct_list {
     width: 100%;
 }
 ul.puduct_list li{
-    height: 300px;
+    height: 350px;
     width: 18%;
     border: 1px solid black;
     float: left;

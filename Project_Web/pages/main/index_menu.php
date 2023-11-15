@@ -10,8 +10,8 @@ $query_pro = mysqli_query($mysqli, $sql_pro);
             <a href="index.php?quanly=sanpham&id=<?php echo $row["id_sp"] ?>">
                 <p><b><?php echo $row['tendanhmuc'] ?></p>
                 <img src="admin/modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" alt="Lỗi hình ảnh">
-                <p class="title_puduct">Tên sản phẩm: <?php echo $row['tensp'] ?></p>
-                <p class="price_puduct">Giá: <?php echo number_format($row['giasp']) . 'vnđ' ?></p>
+                <p class="title_puduct"><?php echo $row['tensp'] ?></p>
+                <p class="price_puduct"><?php echo number_format($row['giasp']) . 'vnđ' ?></p>
             </a>
         </li>
     <?php
