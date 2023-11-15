@@ -2,7 +2,7 @@
 $sql_lietke_sp = "SELECT *FROM tbl_sanpham,tbl_danhmuc where tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY id_sp DESC";
 $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 ?>
-<h3>Danh sách vừa nhập</h3>
+<h3 class="font-size-24 mg-5">Danh sách vừa nhập</h3>
 <div class="bg-main-item pd-5 bd-5">
 
     <table border="1px" style="width: 100%;">

@@ -2,7 +2,7 @@
 $sql_lietke_danhmucsp = "SELECT *FROM tbl_danhmuc ORDER BY thutu DESC";
 $query_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
 ?>
-<h3>Danh sách vừa nhập</h3>
+<h3 class="font-size-24 mg-5">Danh sách vừa nhập</h3>
 <div class="bg-main-item pd-5 bd-5">
     <table border="1px" style="width: 100%;" class="danhmuc-lietke">
         <tr>

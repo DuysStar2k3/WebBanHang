@@ -102,13 +102,17 @@ table {
 .menu_container {
 }
 
+.bg-main-menu {
+    background-color:#18325e;
+    min-height: 90vh;
+}
+
 ul.menu_list {
     flex: 4;
-    height: 100vh;
+    height: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
-    background-color:#18325e;
 }
 
 ul.menu_list li {
@@ -226,4 +230,22 @@ ul.menu_list li:hover {
     display: block;
     font-weight: bold;
     font-size: 18px;
+}
+
+
+/* header-admin */
+
+.header-admin {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #18325e;
+    color: #fff;
+}
+
+.header-admin-text  {
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 0px 0px 10px;
 }

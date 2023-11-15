@@ -1,4 +1,4 @@
-<p>Welcome to dasboard</p>
+<p class="font-size-24 mg-5">Welcome to dasboard</p>
 <div class="flex-container flex-wrap bg-dash">
 
     <div class="info-box fex-1">

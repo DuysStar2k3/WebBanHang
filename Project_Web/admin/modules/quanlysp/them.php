@@ -1,4 +1,4 @@
-<p>Thêm sản phẩm</p>
+<p class="font-size-24 mg-5">Thêm sản phẩm</p>
 <div class="bg-main-item pd-5 bd-5">
 
     <table border="1px" width="50%">

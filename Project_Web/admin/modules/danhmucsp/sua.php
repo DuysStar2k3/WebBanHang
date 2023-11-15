@@ -2,7 +2,7 @@
 $sql_sua_danhmucsp = "SELECT * FROM tbl_danhmuc WHERE id_danhmuc = '$_GET[iddanhmuc]' LIMIT 1";
 $query_sua_danhmucsp = mysqli_query($mysqli, $sql_sua_danhmucsp);
 ?>
-<p>Sửa danh mục sản phẩm</p>
+<p class="font-size-24 mg-5">Sửa danh mục sản phẩm</p>
 <div class="bg-main-item pd-5 bd-5">
     <table border="1px" width="50%">
         <form method="post" action="modules/danhmucsp/xuly.php?iddanhmuc=<?php echo $_GET['iddanhmuc'] ?>">

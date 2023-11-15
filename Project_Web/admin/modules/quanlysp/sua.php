@@ -2,7 +2,7 @@
 $sql_sua_sp = "SELECT * FROM tbl_sanpham WHERE id_sp = '$_GET[idsanpham]' LIMIT 1";
 $query_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
 ?>
-<p>Sửa danh mục sản phẩm</p>
+<p class="font-size-24 mg-5">Sửa danh mục sản phẩm</p>
 <div class="bg-main-item pd-5 bd-5">
 
     <table border="1px" width="50%">
