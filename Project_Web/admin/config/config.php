@@ -1,5 +1,5 @@
 <?php
-    $mysqli = new mysqli("localhost","root","","web_banhang");
+    $mysqli = new mysqli("localhost","root","","db_webbanhang");
 
     // Check connection
     if ($mysqli -> connect_errno) {
