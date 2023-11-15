@@ -1,97 +1,25 @@
-body{
-    padding: 0;
-    margin: 0;
-}
-.wrapper{
-    border: 1px solid #000000;
-    height: auto;
-    width: 97%;
-    margin: 0 auto;
-}
 
-.menu{
-    border: 1px solid #000;
-    height: 50px;
-    width: 100%;
-    background: #00e6ac;
-}
-ul.list_menu{
-    padding: 0;
-    margin: 0;
-    width: 60%;
-    list-style: none;
-    margin: 0 auto;
-    line-height: 27px;
-    
-}
-ul.list_menu li:hover{
-    background:red;
-}
 
-ul.list_menu li{
-    float: left;
-    margin: 5px;
-    padding: 5px;
-    font-size: 20px;
-    border-radius: 20px;
-}
-
-ul.list_menu li a{
+.header a {
+    margin: 11px;
     text-decoration: none;
-    color: aliceblue;
-    text-align: center;
-    margin: 3px;
-    text-transform: uppercase;
-}
-
-#main{
-    border: 1px solid #000;
-    height:auto;
-    width: 100%;
-    
-}
-.sidebar{
-    border: 1px solid #000066;
-    height: auto;
-    width: 20%;
-    margin: 10px;
-    margin-left: 10px;
-    float: left;
-    border-radius: 20px;
-}
-ul.list_sidebar li{
-    list-style: none;
-    margin-bottom: 12px;
-    
-}
-ul.list_sidebar li a{
-    text-decoration: none;
-    
-}
-ul.list_sidebar li :hover{
-    color: red;
-}
-.main_content{
-    border: 1px solid #000066;
-    height: auto;
-    width: 76%;
-    margin: 10px;
-    margin-right: 5px;
-    float: right;
-    border-radius: 20px;
+    color: black;
 }
 ul.puduct_list {
-    padding: 0;
-    margin: 0;
+    padding: 15px;
+    margin: 10px;
     list-style: none;
     width: 100%;
 }
-ul.puduct_list li{
-    height: 350px;
-    width: 18%;
+
+
+ul.puduct_list li {
+    height: 333px;
+    width: 15%;
     border: 1px solid black;
     float: left;
     margin: 10px;
+    border-radius: 12px;
 }
 ul.puduct_list li img{
     width: 100%;
@@ -106,26 +34,6 @@ p.title_puduct {
     font-size: 17px;
     font-weight: bold;
 }
-p.price_puduct {
-    font-size: 18px;
-    color: red;
-    font-weight: bold;
-}
-.clear{
-    clear: both;
-}
-.footer{
-    border: 1px solid #000;
-    height: 150px;
-    width: 100%;
-    background: #00cc99;
-}
-.footer p {
-    text-align: center;
-    font-size: 21px;
-    font-weight: bold;
-}
-
 p{
     margin: 7px;
     color: black;
@@ -133,10 +41,6 @@ p{
 
 /* css sản phẩm */
 /* Reset CSS */
-
-
-
-
 
 
 .red-text {
