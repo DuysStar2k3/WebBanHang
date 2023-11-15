@@ -18,6 +18,12 @@
         include("modules/quanlysp/lietke.php");
     } elseif ($tmp == 'quanlysp' && $query == 'sua') {
         include("modules/quanlysp/sua.php");
+    //quanlybv
+    } elseif ($tmp == 'quanlybviet' && $query == 'them') {
+        include("modules/quanlybviet/them.php");
+        include("modules/quanlybviet/lietke.php");
+    } elseif ($tmp == 'quanlybviet' && $query == 'sua') {
+        include("modules/quanlybviet/sua.php");
     } else {
         include("modules/dashboard.php");
     }
