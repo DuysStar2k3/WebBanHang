@@ -33,13 +33,13 @@
                 <h3>Giỏ hàng</h3>
             </li>
         </a>
-        <a href="">
+        <a href="index.php?quanly=register">
             <li class="home">
                 <img src="./IMG/icon/Reg-btn.png" alt="" />
                 <h3>Đăng kí</h3>
             </li>
         </a>
-        <a href="">
+        <a href="index.php?quanly=login">
             <li class="home">
                 <img src="./IMG/icon/Login-icon.png" alt="" />
                 <h3>Đăng nhập</h3>

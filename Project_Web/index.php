@@ -7,6 +7,7 @@
     <title>Di Động Thông Minh</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
     <script src="js/funtion.js"></script>
 </head>
 
