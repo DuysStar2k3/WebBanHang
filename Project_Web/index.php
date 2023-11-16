@@ -16,9 +16,24 @@
         <?php
         include("admin/config/config.php");
         include("pages/header.php");
-        include("pages/main.php");
-        include("pages/footer.php");
         ?>
+        <?php
+        if (isset($_GET["quanly"])) {
+            $tmp = $_GET['quanly'];
+        } else {
+            $tmp = " ";
+        }
+        if ($tmp == "login") {
+            include("pages/login.php");
+        } else {
+        ?>
+            <?php
+            include("pages/main.php");
+            include("pages/footer.php");
+            ?>
+        <?php
+        } ?>
+
     </div>
 </body>
 

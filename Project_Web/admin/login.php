@@ -22,33 +22,35 @@ if (isset($_POST["dangnhap"])) {
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../admin/css/login.css">
+    <link rel="stylesheet" href="../../css/login_user.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ludiflex | Login</title>
 </head>
 
 <body>
-    <form action="" autocomplete="off" method="POST">
-        <div class="main-log">
-            <div class="boder">
-                <h2>Đăng nhập</h2>
-                <div class="">
-                    <label for="Tentaikhoan">Tên tài khoản:</label> <br>
-                    <input class="input-log" type="text" name="username" id="Tentaikhoan"> <br>
-                </div>
-                <div>
-
-                    <label for="Matkhau">Mật khẩu:</label> <br>
-                    <input class="input-log" type="password" name="password" id="Matkhau"> <br>
-                </div>
-                <div>
-                    <button type="password" class="button-log" name="dangnhap">
-                        Đăng nhập
-                    </button> <br>
-                </div>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <span>Have an account?</span>
+                <header>Login Admin</header>
             </div>
+            <form action="" autocomplete="off" method="POST">
+                <div class="input-field">
+                    <input type="text" class="input" name="username"  >
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" name="password" >
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="submit" name="dangnhap" value="Login">
+                </div>
+            </form>
         </div>
-    </form>
+    </div>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <div class="header">
     <div class="name">
-        <span>DI ĐỘNG THÔNG MINH</span>
+        DI ĐỘNG THÔNG MINH
     </div>
     <div class="search-box">
         <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm..." />
@@ -33,14 +33,8 @@
                 <h3>Giỏ hàng</h3>
             </li>
         </a>
-        <a href="index.php?quanly=register">
-            <li class="home">
-                <img src="./IMG/icon/Reg-btn.png" alt="" />
-                <h3>Đăng kí</h3>
-            </li>
-        </a>
-        <a href="index.php?quanly=login">
-            <li class="home">
+        <a href="index.php?quanly=login" >
+            <li class="home" >
                 <img src="./IMG/icon/Login-icon.png" alt="" />
                 <h3>Đăng nhập</h3>
             </li>

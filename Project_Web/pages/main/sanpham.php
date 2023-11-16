@@ -72,12 +72,6 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
                     </div>
 
                     <div class="choose-quantity-like">
-                        <strong>Số lượng:</strong>
-                        <div class="quantity-item">
-                            <button class="decrease-item">-</button>
-                            <span class="value-item">1</span>
-                            <button class="increase-item">+</button>
-                        </div>
 
                         <div class="like-item">
                             <strong>Yêu thích:</strong>

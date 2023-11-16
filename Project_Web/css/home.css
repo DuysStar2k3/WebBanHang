@@ -138,6 +138,7 @@
   overflow: hidden;
   margin-left: 27px;
   margin-right: 200px;
+  height: 310px;
 }
 .product-container {
   display: flex;
@@ -199,4 +200,7 @@
   margin-bottom: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
+}
+input.search-input {
+  border-radius: 10px;
 }
