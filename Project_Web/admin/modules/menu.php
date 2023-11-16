@@ -1,11 +1,6 @@
 <div class="menu_container">
     <ul class="menu_list">
-    <li class="">
-            <a href="index.php?action=dashboard&query=them">
-                Dashboard
-            </a>
-        </li>
-        <li class="">
+        <li class="active">
             <a href="index.php?action=danhmucsp&query=them">
                 Quản lý danh mục sản phẩm
             </a>
@@ -32,12 +27,12 @@
     var listItems = document.querySelectorAll('.menu_list li');
 
     listItems.forEach(function(li) {
-      li.addEventListener('click', function(event) {
-       
-        var link = li.querySelector('a');
-        window.location.href = link.getAttribute('href');
-      });
+        li.addEventListener('click', function(event) {
+
+            var link = li.querySelector('a');
+            window.location.href = link.getAttribute('href');
+        });
     });
-  </script>
+</script>
 
 </body>
