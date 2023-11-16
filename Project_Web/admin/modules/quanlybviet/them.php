@@ -6,17 +6,17 @@
             <form method="post" action="modules/quanlybviet/xuly.php" enctype="multipart/form-data">
                 <div class="mg-5">
                     <label for="title">Tiêu đề:</label>
-                    <input type="text" id="title" name="title" required>
+                    <input type="text" id="title" name="tieudebaiviet" required>
                 </div>
                 <div class="mg-5">
                     <label for="content">Nội dung:</label>
-                    <textarea class="no-resize" rows="20" id="content" name="content" required></textarea>
+                    <textarea class="no-resize" rows="20" id="noidungbaiviet" name="noidungbaiviet" required></textarea>
                 </div>
                 <div class="mg-5">
                     <label for="image">Danh mục:</label>
                     <select name="danhmuc">
                         <?php
-                        $sql_danhmuc = "SELECT *FROM tbl_danhmuc ORDER BY id_danhmuc desc";
+                        $sql_danhmuc = "SELECT *FROM tbl_danhmucbv ORDER BY id_danhmuc desc";
                         $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
                         while ($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
                             ?>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="mg-5">
                     <label for="image">Hình ảnh:</label>
-                    <input type="file" id="image" name="image">
+                    <input type="file" id="image" name="hinhanh">
                 </div>
                 <div class="mg-5">
                     <input type="submit" name="thembv" value="Thêm bài viết">
