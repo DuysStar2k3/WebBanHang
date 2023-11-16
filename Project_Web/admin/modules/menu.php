@@ -1,6 +1,11 @@
 <div class="menu_container">
     <ul class="menu_list">
-        <li class="active">
+    <li class="">
+            <a href="index.php?action=dashboard&query=them">
+                Dashboard
+            </a>
+        </li>
+        <li class="">
             <a href="index.php?action=danhmucsp&query=them">
                 Quản lý danh mục sản phẩm
             </a>
