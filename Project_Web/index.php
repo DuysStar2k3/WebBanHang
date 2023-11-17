@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/lienhe.css">
     <link rel="stylesheet" href="css/tintuc.css">
+    <link rel="stylesheet" href="./css/themify-icons/themify-icons.css">
     <script src="js/funtion.js"></script>
 </head>
 
