@@ -1,3 +1,8 @@
+<?php
+    if(isset($_GET['logout'])&&$_GET['logout']==1){
+        unset($_SESSION['login']);
+    }
+?>
 <div class="header">
     <div class="name">
         DI ĐỘNG THÔNG MINH
@@ -33,11 +38,27 @@
                 <h3>Giỏ hàng</h3>
             </li>
         </a>
-        <a href="index.php?quanly=login" >
-            <li class="home" >
-                <img src="./IMG/icon/Login-icon.png" alt="" />
-                <h3>Đăng nhập</h3>
-            </li>
-        </a>
+        <?php
+        if (isset($_SESSION['login'])) {
+        ?>
+            <a href="index.php?logout=1">
+                <li class="home">
+                    <img src="./IMG/icon/logout_icon.png" alt="" />
+                    <h3>Đăng xuất</h3>
+                </li>
+            </a>
+        <?php
+        } else {
+        ?>
+            <a href="index.php?quanly=login">
+                <li class="home">
+                    <img src="./IMG/icon/Login-icon.png" alt="" />
+                    <h3>Đăng nhập</h3>
+                </li>
+            </a>
+        <?php
+        }
+        ?>
+
     </ul>
 </div>

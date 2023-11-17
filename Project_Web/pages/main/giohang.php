@@ -1,8 +1,4 @@
-<?php
-    session_start();
-?>
 <p>giỏ hàng</p>
-
 <?php
     if(isset($_SESSION['cart'])){
         echo '<pre>';

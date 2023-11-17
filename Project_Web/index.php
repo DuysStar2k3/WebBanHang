@@ -15,7 +15,9 @@
 
 <body>
     <div class="wrapper">
+        
         <?php
+        session_start();
         include("admin/config/config.php");
         include("pages/header.php");
         ?>
@@ -26,7 +28,7 @@
             $tmp = " ";
         }
         if ($tmp == "login") {
-            include("pages/login.php");
+            include("login.php");
         } elseif ($tmp == "giohang") {
             include("pages/main/giohang.php");
         } elseif ($tmp == "tintuc") {
