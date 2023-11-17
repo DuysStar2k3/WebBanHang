@@ -5,7 +5,7 @@
 ?>
 <div class="header">
     <div class="name">
-        DI ĐỘNG THÔNG MINH
+        <a href="index.php">DI ĐỘNG THÔNG MINH</a>
     </div>
     <div class="search-box">
         <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm..." />

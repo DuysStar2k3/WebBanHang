@@ -235,6 +235,7 @@ ul.menu_list li:hover {
 
 /* header-admin */
 
+
 .header-admin {
     display: flex;
     width: 100%;
@@ -245,10 +246,15 @@ ul.menu_list li:hover {
 }
 
 .header-admin-text  {
-    color: rgb(179, 179, 179);
+
     font-weight: bold;
     font-size: 30px;
     margin: 10px 0px 0px 10px;
+}
+
+.header-admin-text a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .info-logout {
