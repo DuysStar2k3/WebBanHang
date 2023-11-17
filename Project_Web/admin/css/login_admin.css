@@ -20,7 +20,9 @@ body{
     width: 350px;
     display: flex;
     flex-direction: column;
-    padding: 0 15px 0 15px;
+    padding: 5px 15px 30px 15px;
+    background-color: rgba(104, 103, 103, 0.9);
+    border-radius: 10px;
 }
 span{
     color: #fff;
@@ -48,7 +50,7 @@ header{
     border-radius: 30px;
     color: #fff;
     padding: 0 0 0 42px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.2);
 }
 i{
     position: relative;
