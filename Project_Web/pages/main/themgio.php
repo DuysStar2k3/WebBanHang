@@ -1,12 +1,7 @@
 <?php
-session_start();
 include('../../admin/config/config.php');
-
-
-
 //them sanpham vao gio hang
 if (isset($_POST['themgiohang'])) {
-    session_destroy();
     $id = $_GET['idsanpham'];
     $soluong = 1;
     $sql = "SELECT * FROM tbl_sanpham WHERE id_sp = '" . $id . "' LIMIT 1";
