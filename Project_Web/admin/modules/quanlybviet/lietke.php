@@ -34,7 +34,7 @@ if (!$query_lietke_bv) {
                 </td>
                 <td><img style="width: 200px;" src="modules/quanlybviet/uploads/<?php echo $row['hinhanh'] ?>" alt=""></td>
                 <td>
-                    <?php echo $row["id_danhmuc"] ?>
+                    <?php echo $row["tendanhmuc"] ?>
                 </td>
                 <td><a href="modules/quanlybviet/xuly.php?idbaiviet=<?php echo $row['id_baiviet'] ?>">Xóa</a>
                     |<a href="?action=quanlybviet&query=sua&idbaiviet=<?php echo $row['id_baiviet'] ?>">Sửa</a></td>

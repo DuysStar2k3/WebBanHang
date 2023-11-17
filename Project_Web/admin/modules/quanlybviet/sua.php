@@ -1,6 +1,12 @@
 <?php
 $sql_sua_bv = "SELECT * FROM tbl_baiviet WHERE id_baiviet = '$_GET[idbaiviet]' LIMIT 1";
 $query_sua_bv = mysqli_query($mysqli, $sql_sua_bv);
+// Thực hiện truy vấn UPDATE
+if (mysqli_query($mysqli, $sql_sua_bv)) {
+    echo "Update thành công!";
+} else {
+    echo "Lỗi: " . mysqli_error($mysqli);
+}
 ?>
 <p class="font-size-24 mg-5">Sửa bài viết</p>
 <div class="bg-main-item pd-5 bd-5">
