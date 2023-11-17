@@ -24,7 +24,14 @@
         include("modules/quanlybviet/lietke.php");
     } elseif ($tmp == 'quanlybviet' && $query == 'sua') {
         include("modules/quanlybviet/sua.php");
-    } else {
+    }
+    //quanlydmbviet
+    elseif ($tmp == 'quanlydmbviet' && $query == 'them') {
+        include("modules/quanlydmbviet/them.php");
+        include("modules/quanlydmbviet/lietke.php");
+    } elseif ($tmp == 'quanlydmbviet' && $query == 'sua') {
+        include("modules/quanlydmbviet/sua.php");}
+     else {
         include("modules/dashboard.php");
     }
     ?>
