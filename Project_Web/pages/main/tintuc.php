@@ -13,6 +13,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: flex-start;
 }
 
 .news-container a {
@@ -21,13 +22,13 @@ color: #000;
 }
 
 .news-item {
-
+    flex-basis: calc(20% - 10px);
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 15px;
     border-radius: 5px;
-    width: 300px;
+    width: 250px;
 }
 
 .news-item img {
