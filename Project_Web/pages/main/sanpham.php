@@ -51,7 +51,7 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
                             <div class="location-ship">
                                 <i class="ti-location-pin"></i>
                                 <p>
-                                    <a class="red-text" href="https://humg.edu.vn/">Chọn địa chỉ giao hàng</a> để dự báo thời gian giao
+                                    <a class="red-text" href="#">Chọn địa chỉ giao hàng</a> để dự báo thời gian giao
                                     hàng,
                                     phí đóng gói, vận
                                     chuyển chính xác nhất

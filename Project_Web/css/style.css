@@ -60,6 +60,7 @@ p{
 
 .item {
     display: flex;
+    justify-content: space-around;
     background-color: #ffffff;
     margin: 10px;
     padding-bottom: 30px;
@@ -69,7 +70,7 @@ p{
 
 .img-toaster {
     margin: 15px;
-    width: 45%;
+    width: 30%;
     border: solid 2px #f2f2f2;
     border-radius: 8px;
     object-fit: contain;
