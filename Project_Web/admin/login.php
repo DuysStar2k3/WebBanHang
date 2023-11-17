@@ -10,6 +10,7 @@ if (isset($_POST["dangnhap"])) {
     if ($count > 0) {
         $_SESSION['dangnhap'] = $taikhoan;
         header("Location:index.php");
+        exit();
     } else {
         echo '<script>alert("Tài khoản hoặc mật khẩu không chính xác")</script>';
         header("Location:login.php");
@@ -24,7 +25,7 @@ if (isset($_POST["dangnhap"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/login_user.css">
+    <link rel="stylesheet" href="../admin/css/login_admin.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Ludiflex | Login</title>
 </head>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="stylesheet" href="css/tintuc.css">
     <script src="js/funtion.js"></script>
 </head>
 
@@ -25,6 +27,14 @@
         }
         if ($tmp == "login") {
             include("pages/login.php");
+        } elseif ($tmp == "giohang") {
+            include("pages/main/giohang.php");
+        } elseif ($tmp == "tintuc") {
+            include("pages/main/tintuc.php");
+        } elseif ($tmp == "lienhe") {
+            include("pages/main/lienhe.php");
+        } elseif ($tmp == "sanpham") {
+            include("pages/main/sanpham.php");
         } else {
         ?>
             <?php

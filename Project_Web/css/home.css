@@ -150,7 +150,7 @@
 }
 
 .product {
-  flex: 0.13; /* 33.33% là kích thước 1/3, trừ đi margin */
+  flex: 0.6; /* 33.33% là kích thước 1/3, trừ đi margin */
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;

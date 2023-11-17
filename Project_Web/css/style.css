@@ -28,6 +28,7 @@ ul.puduct_list li img{
 ul.puduct_list li a {
     text-decoration: none;
     text-align: center;
+    text-transform: capitalize;
 }
 p.title_puduct {
     color: black;

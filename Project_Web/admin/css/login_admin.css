@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans serif;
 }
 body{
-    background-image: url("../pages/login/image_user/R.jpg");
+    background-image: url("../../pages/login/image_user/R.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,11 +39,10 @@ header{
 .input-field{
     display: flex;
     flex-direction: column;
-    height: 10px;
 }
 .input-field .input{
-    height: 100px;
-    width: 87%;
+    height: 45px;
+    width: 88%;
     border: none;
     outline: none;
     border-radius: 30px;

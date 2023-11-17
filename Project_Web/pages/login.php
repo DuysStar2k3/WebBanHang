@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../../css/login_user.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Ludiflex | Login</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     <div class="box">
