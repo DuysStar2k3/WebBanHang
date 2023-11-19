@@ -1,18 +1,21 @@
 <?php
-    if(isset($_GET['logout'])&&$_GET['logout']==1){
-        unset($_SESSION['login']);
-    }
+if (isset($_GET['logout']) && $_GET['logout'] == 1) {
+    unset($_SESSION['login']);
+}
 ?>
 <div class="header">
     <div class="name">
         <a href="index.php">DI ĐỘNG THÔNG MINH</a>
     </div>
-    <div class="search-box">
-        <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm..." />
-        <button class="search-button">
-            <img src="./IMG/icon/search-icon.png" alt="Search Icon" />
-        </button>
-    </div>
+    <form action="index.php?quanly=timkiem" method="POST">
+        <div class="search-box">
+            <input type="text" name="tukhoa" class="search-input" placeholder="Tìm kiếm sản phẩm..." autocomplete="off" />
+            <button name="timkiem" class="search-button">
+                <img src="./IMG/icon/search-icon.png" alt="Search Icon" />
+            </button>
+        </div>
+    </form>
+
     <ul class="menu">
         <a href="index.php">
             <li class="home">

@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/lienhe.css">
-    <link rel="stylesheet" href="css/tintuc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="./css/themify-icons/themify-icons.css">
     <script src="js/funtion.js"></script>
 </head>
@@ -36,6 +35,8 @@
             include("pages/main/tintuc.php");
         } elseif ($tmp == "lienhe") {
             include("pages/main/lienhe.php");
+        } elseif ($tmp == "timkiem") {
+            include("pages/main/timkiem.php");
         } elseif ($tmp == "sanpham") {
             include("pages/main/sanpham.php");
         } else {

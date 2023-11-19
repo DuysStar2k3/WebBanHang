@@ -22,7 +22,7 @@
         }
         if ($tmp == "danhmuc") {
             include("pages/main/danhmuc.php");
-        } else {
+        }else {
             include("pages/main/index_menu.php");
         }
         ?>

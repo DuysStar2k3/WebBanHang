@@ -5,22 +5,6 @@ $sql_chitiet = "SELECT *FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmu
 $query_chitiet = mysqli_query($mysqli, $sql_chitiet);
 while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
 ?>
-    <!-- <div class="wapper_chitiet">
-        <div class="hinhanh_sanpham">
-            <img style="width: 100%;border: 1px solid;margin-left: 13px;border-radius: 30px;" src="admin/modules/quanlysp/uploads/<?php echo $row_chitiet['hinhanh'] ?>" alt="">
-        </div>
-        <form method="POST" action="pages/main/themgio.php?idsanpham=<?php echo $row_chitiet['id_sp'] ?>">
-            <div class="chitiet_sanpham">
-                <h3>Tên sản phẩm: <?php echo $row_chitiet['tensp'] ?></h3>
-                <p>Mã sản phẩm:<?php echo $row_chitiet['masp'] ?> </p>
-                <p>Giá sản phẩm: <?php echo number_format($row_chitiet['giasp']) . 'vnđ' ?></p>
-                <p>Số lượng: <?php echo $row_chitiet['soluong'] ?></p>
-                <p>Danh mục: <?php echo $row_chitiet['tendanhmuc'] ?></p>
-                <input class="submit_1" type="submit"name="themgiohang" value="Thêm vào giỏ hàng">
-                <input class="submit_1" type="submit"  value="Mua Ngay">
-            </div>
-        </form>
-    </div> -->
     <form method="POST" action="pages/main/themgio.php?idsanpham=<?php echo $row_chitiet['id_sp'] ?>">
         <div id="container">
 
@@ -35,8 +19,8 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
                     <div class="cost-item">
                         <p>
                             <small><del><?php echo number_format($row_chitiet['giasp']) . 'vnđ' ?></del></small>
-                            <strong style="padding-left: 5px;"> <?php echo number_format($row_chitiet['giasp'] - $row_chitiet['giasp'] * 0.39) . 'vnđ' ?></strong>
-                            <strong class="red-text">( - 39 % )</strong>
+                            <strong style="padding-left: 5px;"> <?php echo number_format($row_chitiet['giasp']) ?></strong>
+                            <strong class="red-text">( - 0 % )</strong>
 
                         </p>
                     </div>
