@@ -85,8 +85,7 @@
 }
 
 .center-container {
-  width: 95%;
-  margin: 15px auto;
+  margin: 20px;
   display: flex;
   justify-content: center;
   
@@ -95,7 +94,7 @@
 .list_product {
   flex: 0.25;
   padding: 20px;
-  background-color: #a09090;
+  background-color: #cfcfcf91;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -137,14 +136,14 @@
   border-radius: 8px;
   overflow: hidden;
   margin-left: 27px;
-  margin-right: 200px;
+  /* margin-right: 200px; */
   height: 310px;
 }
 .product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 10px;
+  margin: 20px;
   border: 1px solid;
   border-radius: 12px;
 }
