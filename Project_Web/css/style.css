@@ -263,10 +263,14 @@ td:last-child {
 .form-mua-hang > input {
     padding: 10px;
     margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: 1px solid transparent;
 }
 
 .form-mua-hang > label {
     margin-top: 5px
+
 }
 
 .form-mua-hang > button {
