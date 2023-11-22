@@ -105,7 +105,21 @@
              <a class="item_gio" href="pages/main/themgio.php?xoatatca=1">Xóa tất cả</a>
          </div>
 
+         <div>
+             <!-- Form thông tin đặt hàng -->
+             <form class="form-mua-hang" method="post" action="">
+                 <label for="tenTaiKhoan">Họ và tên:</label>
+                 <input type="text" name="tenTaiKhoan" required>
 
-         <a href="#" class="checkout-button">Proceed to Checkout</a>
+                 <label for="diaChi">Địa chỉ:</label>
+                 <input type="text" name="diaChi" required>
+
+                 <label for="soDienThoai">Số điện thoại:</label>
+                 <input type="text" name="soDienThoai" required>
+
+                 <button class="checkout-button" type="submit" name="submit_order">Đặt hàng</button>
+             </form>
+
+         </div>
      </div>
  </body>

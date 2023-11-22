@@ -252,3 +252,24 @@ td:last-child {
     border-right: none;
 
 }
+
+/* //css mua hang */
+.form-mua-hang {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.form-mua-hang > input {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-mua-hang > label {
+    margin-top: 5px
+}
+
+.form-mua-hang > button {
+    padding: 15px;
+    margin-top: 10px;
+}

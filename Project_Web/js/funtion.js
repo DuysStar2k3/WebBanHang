@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const xacNhan = confirm("Xác nhận mua hàng?");
     if (xacNhan) {
       alert("Cảm ơn quý khách! Quý khách đã đặt hàng thành công.");
-      window.location.href = "https://humg.edu.vn/";
+      window.location.href = "";
     } else {
       alert("Chưa đặt hàng thành công.");
     }
