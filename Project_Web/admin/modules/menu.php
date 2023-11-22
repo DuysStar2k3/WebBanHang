@@ -25,6 +25,11 @@
                 Quản lý bài viết
             </a>
         </li>
+        <li class="">
+            <a href="index.php?action=quanlydonhang&query=lietke">
+                Quản lý đơn hàng
+            </a>
+        </li>
     </ul>
 </div>
 

@@ -18,7 +18,7 @@
         include("modules/quanlysp/lietke.php");
     } elseif ($tmp == 'quanlysp' && $query == 'sua') {
         include("modules/quanlysp/sua.php");
-    //quanlybv
+        //quanlybv
     } elseif ($tmp == 'quanlybviet' && $query == 'them') {
         include("modules/quanlybviet/them.php");
         include("modules/quanlybviet/lietke.php");
@@ -30,8 +30,12 @@
         include("modules/quanlydmbviet/them.php");
         include("modules/quanlydmbviet/lietke.php");
     } elseif ($tmp == 'quanlydmbviet' && $query == 'sua') {
-        include("modules/quanlydmbviet/sua.php");}
-     else {
+        include("modules/quanlydmbviet/sua.php");
+    }
+    //quanlydonhang
+    elseif ($tmp == 'quanlydonhang' && $query == 'them') {
+        include("modules/quanlydonhang/lietke.php");
+    } else {
         include("modules/dashboard.php");
     }
     ?>

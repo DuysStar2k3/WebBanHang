@@ -13,6 +13,7 @@
     <title>Admin</title>
     <link rel="stylesheet" href="../admin/css/style.css">
     <link rel="stylesheet" href="css/login.php">
+    <link rel="stylesheet" href="../css/themify-icons/themify-icons.css">
 </head>
 
 <body>

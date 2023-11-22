@@ -1,4 +1,4 @@
-<p class="font-size-24 mg-5">Welcome to dasboard</p>
+<p class="font-size-24 mg-5">Welcome to dasboard!</p>
 <?php
 //đếm danh mục
 $sql_dem_danhmuc = "SELECT COUNT(*) AS dem FROM tbl_danhmuc";
@@ -12,6 +12,10 @@ $query_dem_danhmucbv = $mysqli->query($sql_dem_danhmucbv);
 //dem bai viet
 $sql_dem_baiviet = "SELECT COUNT(*) AS dem FROM tbl_baiviet";
 $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
+//dem don hang
+
+
+
 ?>
 
 <!-- 
@@ -24,7 +28,7 @@ $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
     ?>
 
         <div class="info-box fex-1">
-            <span class="info-box-icon bg-aqua"><i class=""></i></span>
+            <span class="info-box-icon bg-aqua"><i class="ti-layout-grid2"></i></span>
 
             <div class="info-box-content">
                 <span class="info-box-text">Danh mục sản phẩm</span><br>
@@ -44,7 +48,7 @@ $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
         $soLuongSanPham = $result['dem'];
     ?>
         <div class="info-box fex-1">
-            <span class="info-box-icon bg-green"><i class=""></i></span>
+            <span class="info-box-icon bg-green"><i class="ti-package"></i></span>
 
             <div class="info-box-content">
                 <span class="info-box-text">Sản phẩm</span><br>
@@ -62,16 +66,16 @@ $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
     if ($sql_dem_danhmucbv) {
         $result = $query_dem_danhmucbv->fetch_assoc();
         $soLuongDanhMucBaiViet = $result['dem'];
-    ?>    
-    <div class="info-box fex-1">
-        <span class="info-box-icon bg-yellow"><i class=""></i></span>
+    ?>
+        <div class="info-box fex-1">
+            <span class="info-box-icon bg-yellow"><i class="ti-book"></i></span>
 
-        <div class="info-box-content">
-            <span class="info-box-text">Danh mục bài viết</span><br>
-            <span class="info-box-number"><?php echo $soLuongDanhMucBaiViet ?></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Danh mục bài viết</span><br>
+                <span class="info-box-number"><?php echo $soLuongDanhMucBaiViet ?></span>
+            </div>
+            <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box-content -->
-    </div>
     <?php
     }
     ?>
@@ -81,18 +85,41 @@ $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
     if ($sql_dem_baiviet) {
         $result = $query_dem_baiviet->fetch_assoc();
         $soLuongBaiViet = $result['dem'];
-    ?> 
+    ?>
 
-    <div class="info-box fex-1">
-        <span class="info-box-icon bg-red"><i class=""></i></span>
+        <div class="info-box fex-1">
+            <span class="info-box-icon bg-red"><i class="ti-write"></i></span>
 
-        <div class="info-box-content">
-            <span class="info-box-text">Bài viết</span><br>
-            <span class="info-box-number"><?php echo $soLuongBaiViet ?></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Bài viết</span><br>
+                <span class="info-box-number"><?php echo $soLuongBaiViet ?></span>
+            </div>
+            <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box-content -->
-    </div>
     <?php
     }
     ?>
+<!-- 
+    //hiển thị số lương bài viết -->
+
+    <div class="info-box mg-10">
+        <span class="info-box-icon bg-azure"><i class="ti-shopping-cart-full"></i></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">Đơn hàng</span><br>
+            <span class="info-box-number"></span>
+    </div>
+    <!-- /.info-box-content -->
+    </div>
+
+    <div class="img-dashboard mg-10">
+        <img src="./img/dash-img.jpg" alt="" width="100%">
+    </div>
+
+    <div class="">
+        <div class="">
+            <div class=""></div>
+        </div>
+    </div>
+
 </div>
