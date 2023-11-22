@@ -112,14 +112,12 @@ $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
     <!-- /.info-box-content -->
     </div>
 
-    <div class="img-dashboard mg-10">
+    <!-- <div class="img-dashboard mg-10">
         <img src="./img/dash-img.jpg" alt="" width="100%">
-    </div>
+    </div> -->
 
-    <div class="">
-        <div class="">
-            <div class=""></div>
-        </div>
+    <div class="img-dashboard-2">
+        <img src="./img/dash-img-2.jpg" alt="" width="50%">
     </div>
 
 </div>
