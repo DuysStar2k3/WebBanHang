@@ -240,7 +240,7 @@ td {
     font-size: 18px;
 }
 
-.img-dashboard {
+/* .img-dashboard {
     flex: 1;
     border-radius: 10px;
 }
@@ -249,7 +249,7 @@ td {
     width: 95%;
     object-fit: cover;
     border-radius: 10px;
-}
+} */
 
 .img-dashboard-2 {
     display: flex;
