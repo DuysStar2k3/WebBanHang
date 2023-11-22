@@ -127,6 +127,47 @@ if (isset($_POST['themgiohang'])) {
             $_SESSION['cart'][] = $new_product;
         }
     }
+    echo '<script>window.history.back();</script>';
+
+}
+// mua hang
+if (isset($_POST['muahang'])) {
+    $id = $_GET['idsanpham'];
+    $soluong = 1;
+
+    $sql = "SELECT * FROM tbl_sanpham WHERE id_sp = '" . $id . "' LIMIT 1";
+    $query = mysqli_query($mysqli, $sql);
+    $row = mysqli_fetch_array($query);
+
+    if ($row) {
+        $new_product = array(
+            'tensp' => $row['tensp'],
+            'id' => $id,
+            'soluong' => $soluong,
+            'giasp' => $row['giasp'],
+            'hinhanh' => $row['hinhanh'],
+            'masp' => $row['masp']
+        );
+
+        // Kiểm tra session giỏ hàng tồn tại
+        if (isset($_SESSION['cart'])) {
+            $found = false;
+            foreach ($_SESSION['cart'] as &$cart_item) {
+                // Nếu dữ liệu trùng
+                if ($cart_item['id'] == $id) {
+                    $cart_item['soluong'] += $soluong;
+                    $found = true;
+                }
+            }
+
+            if (!$found) {
+                $_SESSION['cart'][] = $new_product;
+            }
+        } else {
+            // Nếu session giỏ hàng không tồn tại
+            $_SESSION['cart'][] = $new_product;
+        }
+    }
 
     header('Location:../../index.php?quanly=giohang');
 }

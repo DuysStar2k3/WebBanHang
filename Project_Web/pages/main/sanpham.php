@@ -1,4 +1,4 @@
-<h3 style="margin-left:10px ;">Chi tiết sản phẩm</h3>
+<h3 style="margin-left:10px ; margin-top: 10px;">Chi tiết sản phẩm</h3>
 <?php
 $sql_chitiet = "SELECT *FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc 
     AND tbl_sanpham.id_sp='$_GET[id]' LIMIT 1";
@@ -19,7 +19,7 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
                     <div class="cost-item">
                         <p>
                             <small><del><?php echo number_format($row_chitiet['giasp']) . 'vnđ' ?></del></small>
-                            <strong style="padding-left: 5px;"> <?php echo number_format($row_chitiet['giasp']) ?></strong>
+                            <strong style="padding-left: 5px;"> <?php echo number_format($row_chitiet['giasp']) ?>đ</strong>
                             <strong class="red-text">( - 0 % )</strong>
 
                         </p>
@@ -50,7 +50,6 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
                     <div class="color-item">
                         <div class="text">
                             <strong>Màu sắc: </strong>
-                            <p>Trắng</p>
                         </div>
                         <img src="admin/modules/quanlysp/uploads/<?php echo $row_chitiet['hinhanh'] ?>" alt="">
                     </div>
@@ -65,7 +64,7 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
 
 
                     <div class="buy-item">
-                        <button onclick="xacNhanMuaHang()" class="buy-now">
+                        <button name="muahang" onclick="xacNhanMuaHang()" class="buy-now">
                             <i class="ti-shopping-cart"></i>
                             <div><strong>Mua ngay</strong></div>
                         </button>

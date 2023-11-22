@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function xacNhanMuaHang() {
     const xacNhan = confirm("Xác nhận mua hàng?");
     if (xacNhan) {
-      alert("Cảm ơn quý khách! Quý khách đã đặt hàng thành công.");
+      alert("Cảm ơn quý khách! Chuyển hướng tới trang đặt hàng");
       window.location.href = "";
     } else {
       alert("Chưa đặt hàng thành công.");
