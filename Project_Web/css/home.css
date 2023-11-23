@@ -193,33 +193,72 @@
 
 
 /*footer*/
-.footer {
-  border-top: 1px solid #ddd;
-  background-color: #7AC7FF;
-}
-.footer .shortcut_menu {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1vh;
-}
-.shortcut_submenu_item p {
-  width: 400px;
-}
-.footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  padding-top: 5px;
-  font-size: 20px;
+.grid{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
 }
 
-.footer ul li {
-  padding: 10;
-  margin: 0;
-  margin-bottom: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+.grid_column-2-4{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
 }
-input.search-input {
-  border-radius: 10px;
+.footer{
+  border-top: 4px solid var(--primary-color);
+  background-color: #7AC7FF;
+}
+.footer_heading{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #000;
+}
+.footer-list{
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-top: 20px;
+}
+.footer-item_link{
+  text-decoration: none;
+  font-size: 1.2 rem;
+  color: #737373;
+  padding: 2px 0;
+  display: flex;
+  align-items: center;
+}
+.footer-item_link:hover{
+  color: var(--primary-color);
+}
+.footer-item_icon{
+  font-size: 1.2rem;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.grid_row-1{
+  display: flex;
+  gap:10px;
+  margin :20px 0;
+  bottom:50px;
+  position: absolute;
+}
+
+.grid_row-2{
+  bottom:0;
+  position: absolute;
+  width: 100%;
+}
+
+.grid_row-2 .footer_text{
+  text-align: center;
 }

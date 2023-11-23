@@ -102,6 +102,14 @@ label a{
 *{
     font-family: 'poppins',sans-serif;
 }
+
+.info-login {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    text-shadow: 2px 2px 10px #000;
+}
+
 body{
     background: linear-gradient(#b8abea,#907cd4,#6c4be2);
     background: url("../pages/login/image_user/R.jpg");

@@ -18,9 +18,9 @@ if (isset($_POST["login_user"])) {
 // Kiểm tra xem người dùng đã đăng nhập hay chưa
 if (isset($_SESSION['login'])) {
     $ten_nguoi_dung = $_SESSION['login'];
-    echo "Xin chào, $ten_nguoi_dung!";
+    echo '<div class="info-login>Xin chào, $ten_nguoi_dung!</div>';
 } else {
-    echo "Bạn chưa đăng nhập.";
+    echo '<div class="info-login">Bạn chưa đăng nhập.</div>';
 }
 ?>
 
