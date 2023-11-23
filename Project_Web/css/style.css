@@ -14,16 +14,17 @@ ul.puduct_list {
 
 
 ul.puduct_list li {
-    height: 333px;
-    width: 15%;
+    height: 335px;
+    width: 18%;
     border: 1px solid black;
     float: left;
-    margin: 10px;
+    margin: 12px;
     border-radius: 12px;
 }
-ul.puduct_list li img{
+ul.puduct_list li img {
     width: 100%;
-    height: 200px;
+    height: 220px;
+    padding-top: 10px;
 }
 ul.puduct_list li a {
     text-decoration: none;

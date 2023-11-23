@@ -25,6 +25,10 @@ if (mysqli_query($mysqli, $sql_sua_bv)) {
                     <td><textarea class="no-resize" rows="5" name="noidungbaiviet"><?php echo $row['noidungbaiviet'] ?></textarea></td>
                 </tr>
                 <tr>
+                    <td>Nguồn</td>
+                    <td><input type="text" name="nguon_url" id="source"><?php echo $row['nguon_url'] ?></td>
+                </tr>
+                <tr>
                     <td>Hình Ảnh</td>
                     <td><input type="file" name="hinhanh">
                         <img style="width: 200px;" src="modules/quanlybviet/uploads/<?php echo $row['hinhanh'] ?>" alt="">

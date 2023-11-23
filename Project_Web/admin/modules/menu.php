@@ -30,6 +30,11 @@
                 Quản lý đơn hàng
             </a>
         </li>
+        <li class="">
+            <a href="index.php?action=quanlybanner&query=them">
+                Quản lý banner
+            </a>
+        </li>
     </ul>
 </div>
 

@@ -1,5 +1,8 @@
 <?php
-$sql_pro = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc order by tbl_sanpham.id_sp desc limit 25";
+$per_page = 10; // Adjust the number of products per page as needed
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$start = ($page - 1) * $per_page;
+$sql_pro = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sp DESC LIMIT $start, $per_page";
 $query_pro = mysqli_query($mysqli, $sql_pro);
 ?>
 <ul class="puduct_list">
@@ -18,4 +21,29 @@ $query_pro = mysqli_query($mysqli, $sql_pro);
     }
     ?>
 </ul>
+<div class="container mt-3">
+    <ul class="pagination">
+        <?php
+        $sql_count = "SELECT COUNT(id_sp) AS total FROM tbl_sanpham";
+        $result_count = mysqli_query($mysqli, $sql_count);
+        $row_count = mysqli_fetch_assoc($result_count);
+        $total_pages = ceil($row_count['total'] / $per_page);
 
+        if ($page > 1) {
+        ?>
+            <li class="page-item"><a class="page-link" href="?page=<?php echo $page - 1; ?>">Previous</a></li>
+        <?php
+        }
+        for ($i = 1; $i <= $total_pages; $i++) {
+        ?>
+            <li class="page-item"><a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+        <?php
+        }
+        if ($page < $total_pages) {
+        ?>
+            <li class="page-item"><a class="page-link" href="?page=<?php echo $page + 1; ?>">Next</a></li>
+        <?php
+        }
+        ?>
+    </ul>
+</div>

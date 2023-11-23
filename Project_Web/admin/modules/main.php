@@ -35,6 +35,9 @@
     //quanlydonhang
     elseif ($tmp == 'quanlydonhang' && $query == 'them') {
         include("modules/quanlydonhang/lietke.php");
+    } elseif ($tmp == 'quanlybanner' && $query == 'them') {
+        include("modules/banner/them.php");
+        include("modules/banner/lietke.php");
     } else {
         include("modules/dashboard.php");
     }

@@ -1,3 +1,4 @@
+
 <h3 style="margin-left:10px ; margin-top: 10px;">Chi tiết sản phẩm</h3>
 <?php
 $sql_chitiet = "SELECT *FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc 

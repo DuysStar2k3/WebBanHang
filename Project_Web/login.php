@@ -18,9 +18,9 @@ if (isset($_POST["login_user"])) {
 // Kiểm tra xem người dùng đã đăng nhập hay chưa
 if (isset($_SESSION['login'])) {
     $ten_nguoi_dung = $_SESSION['login'];
-    echo '<div class="info-login>Xin chào, $ten_nguoi_dung!</div>';
+    echo "Xin chào, $ten_nguoi_dung!";
 } else {
-    echo '<div class="info-login">Bạn chưa đăng nhập.</div>';
+    echo "Bạn chưa đăng nhập.";
 }
 ?>
 
@@ -75,7 +75,7 @@ if (isset($_SESSION['login'])) {
                     <small>We are happy to have you back.</small>
                 </div>
                 <form action="" autocomplete="off" method="POST">
-                    <div class="input-group">
+                    <div class="input-gr">
                         <div class="input-field">
                             <input type="text" name="nameuser" class="input-box" id="logEmail" required>
                             <label for="logEmail">Email address</label>
@@ -112,7 +112,7 @@ if (isset($_SESSION['login'])) {
                     <small>We are happy to have you with us.</small>
                 </div>
                 <form action="" method="POST">
-                    <div class="input-group">
+                    <div class="input-gr">
                         <div class="input-field">
                             <input type="text"name="emaildki"  class="input-box" id="regUsername" required>
                             <label for="regUsername">Email address</label>

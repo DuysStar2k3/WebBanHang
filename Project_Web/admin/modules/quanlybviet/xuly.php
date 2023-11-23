@@ -5,6 +5,7 @@ include('../../config/config.php');
 if (isset($_POST["thembv"])) {
     $tenbv = $_POST["tieudebaiviet"];
     $noidungbv = $_POST["noidungbaiviet"];
+    $nguon_url=$_POST["nguon_url"];
     $danhmuc = $_POST["danhmuc"];
 
     // Xử lý hình ảnh
@@ -13,8 +14,8 @@ if (isset($_POST["thembv"])) {
     $hinhanh = time() . '_' . $hinhanh;
 
     // Chuẩn bị câu truy vấn INSERT
-    $sql_them = "INSERT INTO tbl_baiviet(tieudebaiviet, noidungbaiviet, hinhanh, id_danhmuc) 
-                 VALUES ('$tenbv', '$noidungbv', '$hinhanh', '$danhmuc')";
+    $sql_them = "INSERT INTO tbl_baiviet(tieudebaiviet, noidungbaiviet,nguon_url, hinhanh, id_danhmuc) 
+                 VALUES ('$tenbv', '$noidungbv','$nguon_url', '$hinhanh', '$danhmuc')";
 
     // Thực hiện truy vấn INSERT
     mysqli_query($mysqli, $sql_them);
@@ -29,6 +30,7 @@ if (isset($_POST["thembv"])) {
     $idbaiviet = $_GET['idbaiviet'];
     $tenbv = $_POST["tieudebaiviet"];
     $noidungbv = $_POST["noidungbaiviet"];
+    $nguon_url=$_POST["nguon_url"];
 
     // Kiểm tra và xử lý hình ảnh
     $hinhanh = $_FILES["hinhanh"]["name"];
@@ -40,10 +42,10 @@ if (isset($_POST["thembv"])) {
         move_uploaded_file($hinhanh_tmp, "uploads/" . $hinhanh);
 
         // Cập nhật thông tin bài viết
-        $sql_update = "UPDATE tbl_baiviet SET tieudebaiviet='$tenbv', noidungbaiviet='$noidungbv', hinhanh='$hinhanh' WHERE id_baiviet='$idbaiviet'";
+        $sql_update = "UPDATE tbl_baiviet SET tieudebaiviet='$tenbv', noidungbaiviet='$noidungbv',nguon_url='$nguon_url', hinhanh='$hinhanh' WHERE id_baiviet='$idbaiviet'";
     } else {
         // Cập nhật thông tin bài viết (không thay đổi hình ảnh)
-        $sql_update = "UPDATE tbl_baiviet SET tieudebaiviet='$tenbv', noidungbaiviet='$noidungbv' WHERE id_baiviet='$idbaiviet'";
+        $sql_update = "UPDATE tbl_baiviet SET tieudebaiviet='$tenbv', noidungbaiviet='$noidungbv', nguon_url='$nguon_url' WHERE id_baiviet='$idbaiviet'";
     }
 
     // Thực hiện truy vấn UPDATE

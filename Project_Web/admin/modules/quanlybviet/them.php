@@ -13,6 +13,11 @@
                     <textarea class="no-resize" rows="20" id="noidungbaiviet" name="noidungbaiviet" required></textarea>
                 </div>
                 <div class="mg-5">
+                    <label for="source">Nguồn:</label>
+                    <input type="text" id="source" name="nguon_url" required>
+                </div>
+                
+                <div class="mg-5">
                     <label for="image">Danh mục:</label>
                     <select name="danhmuc">
                         <?php

@@ -13,6 +13,7 @@ if (!$query_lietke_bv) {
             <th>ID</th>
             <th>Tiêu đề</th>
             <th>Nội dung</th>
+            <th>Nguồn</th>
             <th>Ảnh</th>
             <th>Danh mục</th>
             <th>Quản lý</th>
@@ -31,6 +32,9 @@ if (!$query_lietke_bv) {
                 </td>
                 <td>
                     <?php echo $row["noidungbaiviet"] ?>
+                </td>
+                <td>
+                    <?php echo $row["nguon_url"] ?>
                 </td>
                 <td><img style="width: 200px;" src="modules/quanlybviet/uploads/<?php echo $row['hinhanh'] ?>" alt=""></td>
                 <td>

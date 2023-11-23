@@ -1,4 +1,14 @@
- <?php
+<style>
+    ul.puduct_list li {
+    height: 300px;
+    width: 18%;
+    border: 1px solid black;
+    float: left;
+    margin: 12px;
+    border-radius: 12px;
+}
+</style>
+<?php
 $sql_pro = "SELECT * FROM tbl_sanpham WHERE tbl_sanpham.id_danhmuc='$_GET[id]' 
 ORDER BY id_sp asc";
 $query_pro = mysqli_query($mysqli, $sql_pro);
@@ -23,5 +33,5 @@ $row_title = mysqli_fetch_array($query_cate);
     <?php
     }
     ?>
-
 </ul>
+
