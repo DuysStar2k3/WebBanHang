@@ -5,6 +5,42 @@ $start = ($page - 1) * $per_page;
 $sql_pro = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sp DESC LIMIT $start, $per_page";
 $query_pro = mysqli_query($mysqli, $sql_pro);
 ?>
+<div id="popup" class="popup-container">
+    <div>
+        <span class="close-button" onclick="closePopup()">&times;</span>
+    </div>
+    <div>
+        Trang web đang trong quá trình phát triển. Xin lỗi vì sự bất tiện này.
+    </div>
+    <div>
+        Web được làm bởi:
+    </div>
+    <ul>
+
+        <li>
+            Trần Đức Vương
+        </li>
+        <li>
+            Đỗ Quang Bình Minh
+        </li>
+        <li>Nguyễn Đức Minh Quân</li>
+        <li>Nguyễn Hồ Việt Anh</li>
+        <li>Nguyễn Hoàng Duy</li>
+        <li>Đỗ Xuân Hạnh</li>
+        <li>Phạm Quốc Huy</li>
+        <li>Đoàn Tuấn Nam</li>
+        <li>Nguyễn Trường Sơn</li>
+        <li>Phạm Thị Hồng Thư</li>
+        <li>Nguyễn Minh Tiến</li>
+    </ul>
+
+</div>
+<script>
+    // Hàm đóng thông báo
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
 <ul class="puduct_list">
     <?php
     while ($row = mysqli_fetch_array($query_pro)) {

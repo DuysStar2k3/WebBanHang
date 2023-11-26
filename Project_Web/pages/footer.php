@@ -3,7 +3,6 @@
   <style>
     .grid {
       width: 1240px;
-      max-width: 100%;
       margin: 0 auto;
       height: 65vh;
       overflow: hidden;

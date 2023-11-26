@@ -18,6 +18,7 @@ limit 1";
 $query_cate = mysqli_query($mysqli, $sql_cate);
 $row_title = mysqli_fetch_array($query_cate);
 ?> 
+
 <h3>Danh mục sản phẩm :<?php echo $row_title["tendanhmuc"] ?></h3>
 <ul class="puduct_list">
     <?php
