@@ -1,4 +1,3 @@
-
 <h3 style="margin-left:10px ; margin-top: 10px;">Chi tiết sản phẩm</h3>
 <?php
 $sql_chitiet = "SELECT *FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc 
@@ -66,8 +65,16 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
 
                     <div class="buy-item">
                         <button name="muahang" onclick="xacNhanMuaHang()" class="buy-now">
-                            <i class="ti-shopping-cart"></i>
-                            <div><strong>Mua ngay</strong></div>
+                            <!-- <i class="ti-shopping-cart"></i>
+                            <div><strong>Mua ngay</strong></div> -->
+                            <?php
+                            if (isset($_SESSION['login'])) {
+
+                            ?>
+                                <a style="text-decoration: none;" href="index.php?quanly=thanhtoan"><button class="checkout-button" type="submit" name="submit_order">Mua Ngay</button></a>
+                            <?php
+                            }
+                            ?>
                         </button>
                         <button name="themgiohang" onclick="xacNhanThemHang()" class="add-to-bag">
                             <i class="ti-shopping-cart"></i>

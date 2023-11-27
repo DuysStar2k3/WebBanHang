@@ -5,10 +5,20 @@ if (!$query_lietke_bv) {
     die("Lỗi truy vấn: " . mysqli_error($mysqli));
 }
 ?>
+<style>
+    .source-column {
+        width: 150px; /* Adjust the width as needed */
+        max-width: 150px; /* Ensure the width doesn't exceed this value */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+
 <h3 class="font-size-24 mg-5">Danh sách vừa nhập</h3>
 <div class="bg-main-item pd-5 bd-5">
 
-    <table border="1px" style="width: 100%;">
+    <table border="1px" style="min-width: 100%;">
         <tr>
             <th>ID</th>
             <th>Tiêu đề</th>
@@ -22,28 +32,20 @@ if (!$query_lietke_bv) {
         $i = 0;
         while ($row = mysqli_fetch_array($query_lietke_bv)) {
             $i++;
-            ?>
+        ?>
             <tr>
-                <td>
-                    <?php echo $i ?>
-                </td>
-                <td>
-                    <?php echo $row["tieudebaiviet"] ?>
-                </td>
-                <td>
-                    <?php echo $row["noidungbaiviet"] ?>
-                </td>
-                <td>
-                    <?php echo $row["nguon_url"] ?>
-                </td>
+                <td><?php echo $i ?></td>
+                <td><?php echo $row["tieudebaiviet"] ?></td>
+                <td><?php echo $row["noidungbaiviet"] ?></td>
+                <td class="source-column"><?php echo $row["nguon_url"] ?></td>
                 <td><img style="width: 200px;" src="modules/quanlybviet/uploads/<?php echo $row['hinhanh'] ?>" alt=""></td>
+                <td><?php echo $row["tendanhmuc"] ?></td>
                 <td>
-                    <?php echo $row["tendanhmuc"] ?>
+                    <a href="modules/quanlybviet/xuly.php?idbaiviet=<?php echo $row['id_baiviet'] ?>">Xóa</a>
+                    | <a href="?action=quanlybviet&query=sua&idbaiviet=<?php echo $row['id_baiviet'] ?>">Sửa</a>
                 </td>
-                <td><a href="modules/quanlybviet/xuly.php?idbaiviet=<?php echo $row['id_baiviet'] ?>">Xóa</a>
-                    |<a href="?action=quanlybviet&query=sua&idbaiviet=<?php echo $row['id_baiviet'] ?>">Sửa</a></td>
             </tr>
-            <?php
+        <?php
         }
         ?>
     </table>

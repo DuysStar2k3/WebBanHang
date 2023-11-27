@@ -33,8 +33,13 @@
         include("modules/quanlydmbviet/sua.php");
     }
     //quanlydonhang
-    elseif ($tmp == 'quanlydonhang' && $query == 'them') {
+    elseif ($tmp == 'quanlydonhang' && $query == 'lietke') {
         include("modules/quanlydonhang/lietke.php");
+    }
+    //quanlydonhang
+    elseif ($tmp == 'donhang' && $query == 'xulydonhang') {
+        include("modules/quanlydonhang/chitietdonhang.php");
+
     } elseif ($tmp == 'quanlybanner' && $query == 'them') {
         include("modules/banner/them.php");
         include("modules/banner/lietke.php");

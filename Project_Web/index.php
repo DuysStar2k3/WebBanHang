@@ -41,6 +41,10 @@
             include("pages/main/timkiem.php");
         } elseif ($tmp == "sanpham") {
             include("pages/main/sanpham.php");
+        } elseif ($tmp == "thanhtoan") {
+            include("pages/main/thanhtoan.php");
+        } elseif ($tmp == "camon") {
+            include("pages/main/camon.php");
         } else {
         ?>
             <?php

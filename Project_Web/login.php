@@ -9,6 +9,7 @@ if (isset($_POST["login_user"])) {
     if ($count > 0) {
         $row_data = mysqli_fetch_array($query);
         $_SESSION['login'] = $taikhoandn;
+        $_SESSION['id_khachhang']=$row_data['id_user'];
         header("Location: index.php");
     } else {
         echo '<p style="color:red">Tài khoản hoặc mật khẩu không chính xác.</p>';

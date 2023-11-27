@@ -69,7 +69,6 @@
          background-color: #333;
      }
  </style>
- </head>
 
  <body>
      <div class="cart-container">
@@ -106,19 +105,18 @@
          </div>
 
          <div>
-             <!-- Form thông tin đặt hàng -->
-             <form class="form-mua-hang" method="post" action="">
-                 <label for="tenTaiKhoan">Họ và tên:</label>
-                 <input type="text" name="tenTaiKhoan" required>
+         <?php
+            if (isset($_SESSION['login'])) {
 
-                 <label for="diaChi">Địa chỉ:</label>
-                 <input type="text" name="diaChi" required>
-
-                 <label for="soDienThoai">Số điện thoại:</label>
-                 <input type="text" name="soDienThoai" required>
-
-                 <button class="checkout-button" type="submit" name="submit_order">Đặt hàng</button>
-             </form>
+            ?>
+            <a style="text-decoration: none;" href="index.php?quanly=thanhtoan"><button class="checkout-button" type="submit" name="submit_order">Đặt hàng</button></a>
+         <?php
+            } else {  
+            ?>
+            <a style="text-decoration: none;" href="index.php?quanly=login#"><button class="checkout-button" type="submit" >Đăng kí tài khoản để đặt hàng</button></a>
+         <?php
+            }
+            ?>
 
          </div>
      </div>

@@ -3,7 +3,7 @@ $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc asc";
 $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
 ?>
 <ul style="width: 100%">
-  <h3 style="font-size: 14px; font-family:Arial, Helvetica, sans-serif;">Danh mục sản phẩm:</h3>
+  <h4 style=" font-family:Arial, Helvetica, sans-serif;">Danh mục sản phẩm:</h4>
   <?php
   while ($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
   ?>
