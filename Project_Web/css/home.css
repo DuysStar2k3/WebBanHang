@@ -75,6 +75,27 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  z-index: 1000;
+  display: block;
+}
+
+.close-button {
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .center-container {
   margin: 20px;
   display: flex;
@@ -176,6 +197,10 @@
 
 
 /*footer*/
+.footer {
+  width: 100%;
+}
+
 .footer ul li {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
