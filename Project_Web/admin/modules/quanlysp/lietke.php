@@ -7,7 +7,7 @@ $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 
     <table border="1px" style="width: 100%;">
         <tr>
-            <th>id</th>
+            <th>ID</th>
             <th> Tên Sản phẩm</th>
             <th>Hình ảnh</th>
             <th>Giá sản phẩm</th>

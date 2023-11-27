@@ -1,4 +1,4 @@
-<p>Chi tiết đơn hàng</p>
+<p class="font-size-24 mg-5">Chi tiết đơn hàng</p>
 <?php
 $sql_lietke_ctdm = "SELECT *FROM tbl_sanpham,tbl_sanpham_gio WHERE tbl_sanpham_gio.id_sp=tbl_sanpham.id_sp
 and tbl_sanpham_gio.code_gio='$_GET[code]' 

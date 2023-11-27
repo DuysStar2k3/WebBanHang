@@ -7,7 +7,7 @@ $query_lietke_banner = mysqli_query($mysqli, $sql_lietke_banner);
 
     <table border="1px" style="width: 100%;">
         <tr>
-            <th>id</th>
+            <th>ID</th>
             <th>Tên banner</th>
             <th>Hình ảnh</th>
         </tr>

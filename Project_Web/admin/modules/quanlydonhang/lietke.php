@@ -1,4 +1,4 @@
-<p>Liệt kê</p>
+<p class="font-size-24 mg-5">Chi tiết đơn hàng</p>
 <?php
 $sql_lietke_dh = "SELECT *FROM tbl_giohang,tbl_user WHERE tbl_giohang.id_user=tbl_user.id_user 
 ORDER BY tbl_giohang.id_gio DESC";

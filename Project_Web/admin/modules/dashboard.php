@@ -13,7 +13,8 @@ $query_dem_danhmucbv = $mysqli->query($sql_dem_danhmucbv);
 $sql_dem_baiviet = "SELECT COUNT(*) AS dem FROM tbl_baiviet";
 $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
 //dem don hang
-
+$sql_dem_donhang = "SELECT COUNT(*) AS dem FROM tbl_giohang";
+$query_dem_donhang = $mysqli->query($sql_dem_donhang);
 
 
 ?>
@@ -99,18 +100,25 @@ $query_dem_baiviet = $mysqli->query($sql_dem_baiviet);
     <?php
     }
     ?>
-<!-- 
-    //hiển thị số lương bài viết -->
+    <!-- 
+    //hiển thị số lương don hang -->
+    <?php
+    if ($sql_dem_donhang) {
+        $result = $query_dem_donhang->fetch_assoc();
+        $soLuongDonHang = $result['dem'];
+    ?>
+        <div class="info-box mg-10">
+            <span class="info-box-icon bg-azure"><i class="ti-shopping-cart-full"></i></span>
 
-    <div class="info-box mg-10">
-        <span class="info-box-icon bg-azure"><i class="ti-shopping-cart-full"></i></span>
-
-        <div class="info-box-content">
-            <span class="info-box-text">Đơn hàng</span><br>
-            <span class="info-box-number"></span>
-    </div>
-    <!-- /.info-box-content -->
-    </div>
+            <div class="info-box-content">
+                <span class="info-box-text">Đơn hàng</span><br>
+                <span class="info-box-number"><?php echo $soLuongDonHang ?></span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+    <?php
+    }
+    ?>
 
     <!-- <div class="img-dashboard mg-10">
         <img src="./img/dash-img.jpg" alt="" width="100%">

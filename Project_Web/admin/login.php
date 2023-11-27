@@ -12,8 +12,9 @@ if (isset($_POST["dangnhap"])) {
         header("Location:index.php");
         exit();
     } else {
-        echo '<script>alert("Tài khoản hoặc mật khẩu không chính xác")</script>';
-        header("Location:login.php");
+        echo '<script>alert("Tài khoản hoặc mật khẩu không chính xác"); setTimeout(function(){ window.location.href = "login.php"; }, 150);</script>';
+        
+        // header("Location:login.php");
     }
 }
 ?>
