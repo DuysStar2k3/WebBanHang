@@ -60,7 +60,7 @@ while ($row = mysqli_fetch_array($query_pro)) {
     <div class="news-container">
         <a href="<?php echo $row['nguon_url'] ?>" class="news-item">
             <img src="admin/modules/quanlybviet/uploads/<?php echo $row['hinhanh'] ?>" alt="News Image">
-            <h3 class="news-title"><?php echo $row['tieudebaiviet'] ?></h3>
+            <h3 class="news-title"><?php echo $row['tendanhmuc'] ?></h3>
             <p class="news-description"><?php echo $excerpt; ?>...</p>
         </a>
     </div>
