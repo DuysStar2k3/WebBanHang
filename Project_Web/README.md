@@ -41,10 +41,10 @@
 
 ## Demo
 Trang chủ:
-http://www.nguyenminhtien.id.vn/
+http://nguyenminhtien.id.vn/
 
 Trang admin:
-http://www.nguyenminhtien.id.vn/
+http://nguyenminhtien.id.vn/admin
 
 Tài khoản: admin
 
