@@ -65,8 +65,8 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
 
                     <div class="buy-item">
                         <button name="muahang" onclick="xacNhanMuaHang()" class="buy-now">
-                            <!-- <i class="ti-shopping-cart"></i>
-                            <div><strong>Mua ngay</strong></div> -->
+                            <i class="ti-shopping-cart"></i>
+                            <div><strong>Mua ngay</strong></div>
                             <?php
                             if (isset($_SESSION['login'])) {
 
