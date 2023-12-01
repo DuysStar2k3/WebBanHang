@@ -42,22 +42,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   // Mua hang
-  function xacNhanMuaHang() {
-    const xacNhan = confirm("Xác nhận mua hàng?");
-    if (xacNhan) {
-      alert("Cảm ơn quý khách! Chuyển hướng tới trang đặt hàng");
-      window.location.href = "";
-    } else {
-      alert("Chưa đặt hàng thành công.");
-    }
-  }
+  // function xacNhanMuaHang() {
+  //   const xacNhan = confirm("Xác nhận mua hàng?");
+  //   if (xacNhan) {
+  //     alert("Cảm ơn quý khách! Chuyển hướng tới trang đặt hàng");
+  //     window.location.href = "";
+  //   } else {
+  //     alert("Chưa đặt hàng thành công.");
+  //   }
+  // }
   
   // Them hang
   function xacNhanThemHang() {
-    const xacNhan = confirm("Xác nhận thêm hàng?");
-    if (xacNhan) {
+    var delayInMilliseconds = 1000;
       alert("Cảm ơn quý khách! Quý khách đã thêm vào giỏ hàng thành công.");
-    } else {
-      alert("Chưa thêm hàng vào giỏ.");
-    }
+      delayInMilliseconds;
   }

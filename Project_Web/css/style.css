@@ -35,6 +35,9 @@ p.title_puduct {
     color: black;
     font-size: 15px;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 p{
     margin: 7px;
