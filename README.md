@@ -44,7 +44,7 @@ Trang chủ:
 http://www.nguyenminhtien.id.vn/
 
 Trang admin:
-http://www.nguyenminhtien.id.vn/
+http://www.nguyenminhtien.id.vn/admin
 
 Tài khoản: admin
 
